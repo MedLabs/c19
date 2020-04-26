@@ -1,0 +1,66 @@
+@keyframes appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .tile {
+    animation: appear 0.5s cubic-bezier(0.175, 0.885, 0.725, 1.075);
+  
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+  
+    width: 33%;
+  
+    margin: 1rem;
+    
+    h2 {
+      font-size: 4rem;
+    }
+  
+    h3 {
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  
+    h2, h3 {
+      margin: 0;
+    }
+  
+    &.cases {
+      color: #1693A5;
+    }
+  
+    &.deaths {
+      color: #F02311;
+    }
+  
+    &.recovered {
+      color: #59A80F;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .tile {
+      width: 100%;
+  
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 950px) and (min-width: 700px) {
+    .tile {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }

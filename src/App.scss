@@ -1,0 +1,158 @@
+
+$site-red: #ff7300;
+
+body {
+    background-color: #dfdfdf;
+
+    .accordion {
+
+        a,
+        button {
+            text-decoration: none !important;
+        }
+
+        .card {
+            margin-top: 0;
+
+            .card-header {
+                font-weight: bold;
+                button {
+                    color: #2e3c42 !important;
+                }
+            }
+
+            .card-body {
+                .tab-content {
+                    margin-top: 2%;
+                    margin-bottom: 1%;
+
+                    table {
+                        thead {
+                            font-size: 2rem;
+                        }
+
+                        tbody {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+
+            .card-header-tabs {
+                margin-bottom: 1%;
+                border-bottom: 1px solid #dee2e6;
+            }
+        }
+    }
+
+    .navbar {
+        overflow: hidden;
+        display: flex;
+
+        a {
+            padding-right: 5%;
+        }
+
+        a:hover {
+            color: $site-red !important;
+        }
+
+        a:focus {
+            text-decoration: underline;
+        }
+
+
+        .navbar-nav {
+            .nav-link {
+                padding: 20px 20px;
+                color: #3a3a3a !important;
+                font-size: 1.5rem;
+                margin-right: 10%;
+            }
+
+            .nav-link:hover {
+                border: 1px solid $site-red !important;
+                background-color: $site-red;
+                color: #ffffff;
+            }
+        }
+
+        form {
+            button {
+                color: #ffffff !important;
+                background-color: $site-red;
+            }
+
+            button:hover {
+                background-color: #343a40;
+                border-color: $site-red !important;
+            }
+        }
+    }
+
+    .card {
+        margin-top: 5%;
+        border-radius: 1.5rem;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .jumbotron {
+        padding-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 3.8%;
+        text-align: center;
+        h1 {
+            padding-top: 1%;
+        }
+
+        table {
+            display: inline-table;
+            max-width: 70%;
+            thead {
+                font-size: 1.5rem;
+            }
+
+            tbody {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    header {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+
+        .navbar {
+            .btn {
+                color: $site-red;
+                border-color: $site-red;
+                font-weight: bold;
+            }
+        }
+
+        img {
+            padding: 1%;
+            height: 10%;
+            display: block;
+        }
+
+        .nav-item {
+            a {
+                padding-top: 5% !important;
+                padding-bottom: 5% !important;
+            }
+        }
+    }
+
+    //Table Style
+    .scrollable {
+        max-height: 600px;
+        overflow-y: auto;
+    }
+
+}
