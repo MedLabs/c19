@@ -125,7 +125,7 @@ render(){
                   <Table.HeaderCell textAlign="center">Tests/Million</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
-<div className='scrollable'>
+
               <Table.Body  className="scrollable">
               {results.map(report => (
                 <Table.Row>
@@ -199,7 +199,7 @@ render(){
                   </Table.Cell>
                 </Table.Row>
               ))}
-              </Table.Body></div>
+              </Table.Body>
             </Table>
             </Responsive>
           </Container>
